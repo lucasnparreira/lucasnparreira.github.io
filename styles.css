@@ -1,109 +1,284 @@
-/* Reset de estilos*/
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
+    background: url('img/image1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    height: 100%;
+    width: 100%;
 }
 
-/* formato para telas com largura minima de 769 px - laptops, tablets e afins */
-@media only screen and (min-width: 769px){
-/* formatacao do body */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fefdfd;
+section {
+    flex: 1;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /* padding: 20px; */
+    text-align: left;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+section #about p {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+header, footer {
+    width: 100%;
+}
+
+#title-menu-side {
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+#image-modal img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .prev, .modal .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal .prev {
+    left: 10px;
+}
+
+.modal .next {
+    right: 10px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: left;
+    justify-content: left;
+}
+
+#image-modal img {
+    margin: auto;
+    display: block;
+}
+
+
+#contact {
+    background-color: #333;  /* Fundo escuro */
+    color: #fff;  /* Texto branco */
+    padding: 20px;  /* Espaçamento interno */
+    text-align: left;
+    opacity: 90%;
+}
+
+#contact a {
+    color: #1e90ff;  /* Cor dos links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact img {
+    vertical-align: middle;
+    margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
+}
+
+
+@media (min-width: 768px) {
+    section {
+        padding: 20px;
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    h1, h2 {
+        text-align: left;
         color: #333;
+    }
+
+    .service, .work-gallery {
+        display: block;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .service {
+        padding-left: 20px;
+    }
+    
+    .work-gallery img {
+        width: 30%;
+        height: auto;
+        border: 1px solid #ccc;
+    }
+    
+    #contact {
+        padding-bottom: 80px;
+        align-items: left;
+        width: 90%;
+    }
+
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        /* display: flex; */
+    }
+
+    footer img {
+        width: 70px;
+        height: auto;
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+
+    footer p {
+        margin: 0;
+        display: inline;
+        margin-top: 15px;
         align-items: center;
     }
     
-    /* formatacao do menu principal */
-    .navbar {
-        overflow: hidden;
-        background-color: #333;
-        font-family: Arial;
-    }
-    
-    .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    .dropdown {
-        float: left;
-        overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 12px 12px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-    }
-    
-    .navbar a:hover,
-    .dropdown:hover .dropbtn {
-        background-color: rgb(221, 218, 218) transparent;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 80px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    #p-core-skills,
-    #p-technical-skills,
-    #p-descricao-resumo {
-        padding: 10px;
-    }
-    
-    #p-descricao-item-experiencia {
-        padding-top: 20px;
-    }
-    
-    #sessao-experiencia,
-    #sessao-resumo,
-    #sessao-idioma,
-    #p-descricao-idioma,
-    #sessao-educacao,
-    #p-descricao-educacao{
-        padding: 10px;
-    }
-    
-    #h3-experiencia {
-        padding-top: 15px;
-    }
-    
-    #h3-resumo {
-        padding-left: 10px;
-        padding-top: 15px;
+    #title-menu-side{
+        padding-left: 2%;
     }
     
     /* Estilos para o formulario de contato */
@@ -131,186 +306,265 @@
         cursor: pointer;
     }
     
-    #h3-contato {
+    #h3-contact {
         padding-bottom: 10px;
     }
 
-/* formatacao do rodape das paginas */
-    footer {
-        padding-top: 40%;
-        padding-left: 20%;
-    }
-
-    #footer-idioma {
-        padding-top: 35%;
-    }
-
-    #footer-educacao {
-        padding-top: 35%;
-    }
-
-    #footer-experiencia {
-        padding-top: 10%;
-        padding-bottom: 5%;
-    }
-    #footer-sobre {
-        padding-top: 50%;
-    }
-    
-}
-
-/* formato para telas com tamanho maximo de 768px - smartphones, pequenos tables, etc */
-@media only screen and (max-width: 768px){
-    /* formatacao do body */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fefdfd;
-        color: #333;
+    .carousel-container {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        font-size: 12px;
+        height: 300px;
+        width: 90%; /* Ajusta a largura do container do carrossel */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding: 0 5%;
+        position: relative;
     }
     
-    /* formatacao do menu principal */
-    .navbar {
+    .carousel {
+        width: 100%; /* Define a largura do carrossel como 100% do container */
+        height: 200px; /* Altura do carrossel */
         overflow: hidden;
-        background-color: #333;
-        font-family: Arial;
+        border: 2px solid #333;
     }
     
-    .navbar a {
-        float: left;
-        font-size: 14px;
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        cursor: grab;
+    }
+    
+    .carousel-inner img {
+        width: 250px; /* Ajusta a largura das imagens */
+        height: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+        flex-shrink: 0; /* Garante que as imagens não encolham */
+    }
+    
+
+    /* .carousel-inner img.active {
+        opacity: 1;
+    } */
+    
+    .prev, .next {
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    .dropdown {
-        float: left;
-        overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-        font-size: 14px;
         border: none;
-        outline: none;
-        color: white;
-        padding: 12px 12px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-    }
-    
-    .navbar a:hover,
-    .dropdown:hover .dropbtn {
-        background-color: rgb(221, 218, 218) transparent;
-    }
-    
-    .dropdown-content {
-        display: none;
+        padding: 10px;
+        cursor: pointer;
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 80px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1;
     }
     
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
+    .prev {
+        left: 0px;
+        font-size: larger;
     }
     
-    .dropdown-content a:hover {
-        background-color: #ddd;
+    .next {
+        right: 0px;
+        font-size: larger;
     }
     
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
     
-    /* formatacao do texto das paginas */
-    #p-core-skills,
-    #p-technical-skills,
-    #p-descricao-resumo {
+}
+
+
+/* Media query para telas menores que 767 pixels */
+@media (max-width: 767px) {
+    section {
         padding: 10px;
+        max-width: 100%;
+    }
+
+    .service, .work-gallery {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .work-gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        /* position: fixed; */
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        /* display: flex; */
+    }
+
+    footer img {
+        width: 70px;
+        height: auto;
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+
+    footer p {
+        margin: 0;
+        display: inline;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .dotted-line {
+        border: 0;
+        border-top: 1px dotted #ccc;
+        margin: 20px 0;
+    }
+
+    #info-stonemates {
+        font-size: 0.9em;
+    }
+
+    #title-menu-side{
+        padding-left: 20%;
+    }
+
+    .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        /* width: 500px; */
+        width: fit-content;
+        position: relative;
+        padding-left: 5%;
     }
     
-    #p-descricao-item-experiencia {
-        padding-top: 20px;
+    .carousel {
+        position: relative;
+        width: 330px;  /* Width of one image */
+        height: 200px;  /* Height of one image */
+        overflow: hidden;
+        border: 2px solid #333;
     }
     
-    #sessao-experiencia,
-    #sessao-resumo,
-    #sessao-idioma,
-    #p-descricao-idioma,
-    #sessao-educacao,
-    #p-descricao-educacao{
-        padding-top: 10px;
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        cursor:touch;
+    }
+    
+    .carousel-inner img {
+        width: 150px;
+        height: 200px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    .prev, .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
         padding-left: 5%;
         padding-right: 5%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
     }
     
-    #h3-experiencia {
-        padding-top: 15px;
+    .prev {
+        left: 5%;
+        font-size: larger;
     }
     
-    #h3-resumo {
-        padding-left: 10px;
-        padding-top: 15px;
+    .next {
+        right: 0px;
+        font-size: larger;
     }
-    
-    /* Estilos para o formulario de contato */
+
+    #carousel-container {
+        padding-right: 10px;
+    }
+
+    .close {
+        font-size: 30px;
+        top: 10px;
+        right: 20px;
+    }
+
+    #image-modal img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .modal .prev, .modal .next {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        margin: 5px;
+    }
+
+    .modal .close {
+        font-size: 30px;
+        top: 10px;
+        right: 10px;
+    }
+
     form {
-        max-width: 400px;
-        margin: 0 auto;
-        padding-top: 60px;
-        padding-left: 20%;
-        padding-right: 20%;
+        max-width: 100%;
+        padding: 10px;
     }
-    
+
     input,
     textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        padding: 8px;
+        font-size: 12px;
     }
-    
+
     button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #contact {
+        width: 85%;
+    }
+
+}
+
+@media(max-width:400px){
+    .carousel-inner img {
+        width: 150px;
+        height: 200px;
     }
     
-    #h3-contato {
-        padding-bottom: 10px;
-    } 
-
-    /* formatacao do rodape das paginas */
-    footer {
-        padding-top: 50%;
-        padding-left: 20%;
+    .prev, .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
     }
-
-    #footer-idioma {
-        padding-top: 120%;
+    
+    .prev {
+        left: 5%;
+        font-size: larger;
     }
-
-    #footer-educacao {
-        padding-top: 110%;
-    }
-
-    #footer-experiencia {
-        padding-top: 10%;
-        padding-bottom: 5%;
+    
+    .next {
+        right: 0px;
+        font-size: larger;
     }
 }
