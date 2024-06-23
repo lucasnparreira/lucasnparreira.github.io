@@ -213,8 +213,31 @@ header, footer {
 }
 
 #contact img {
-    vertical-align: middle;
+    vertical-align: left;
     margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
+}
+
+#instagram-icon {
+    width: 24px;  /* Ajuste a largura conforme necessário */
+    height: 24px;  /* Ajuste a altura conforme necessário */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* #instagram-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #E4405F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+} */
+
+#instagram-link:hover {
+    background-color: #C13584;
 }
 
 
