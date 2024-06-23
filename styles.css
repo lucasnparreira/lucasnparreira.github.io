@@ -227,7 +227,11 @@ header, footer {
     
     h1, h2 {
         text-align: left;
-        color: #333;
+        /* color: #333; */
+    }
+
+    #contact-title {
+        color: white;
     }
 
     .service, .work-gallery {
@@ -247,10 +251,12 @@ header, footer {
     }
     
     #contact {
-        padding-bottom: 80px;
+        padding-bottom: 2%;
         align-items: left;
+        justify-content: space-between;
         width: 90%;
     }
+
 
     footer {
         background: #333;
