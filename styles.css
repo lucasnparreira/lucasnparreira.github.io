@@ -34,13 +34,24 @@ header, footer {
     width: 100%;
 }
 
-#title-menu-side {
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar .dropbtn {
+    font-size: 16px;
     color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #333;
+    /* overflow: hidden; */
+    /* background-color: #333; */
     display: flex;
     align-items: center;
 }
@@ -52,6 +63,46 @@ header, footer {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 80%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #575757;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+}
+
+#title-menu-side {
+    color: white;
 }
 
 .dropdown {
@@ -224,18 +275,6 @@ header, footer {
     margin-right: 10px;
 }
 
-/* #instagram-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #E4405F;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-} */
-
 #instagram-link:hover {
     background-color: #C13584;
 }
@@ -407,6 +446,13 @@ header, footer {
     section {
         padding: 10px;
         max-width: 100%;
+    }
+
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
     }
 
     .service, .work-gallery {

@@ -66,3 +66,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     this.reset();
 });
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "190px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    
+    setTimeout(() => {
+        location.reload();
+    }, 200);
+}
