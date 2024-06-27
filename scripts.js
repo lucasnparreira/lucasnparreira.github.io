@@ -85,7 +85,22 @@ function hiddeBtnArrowTop() {
 }
 
 function showBtnArrowTop() {
-    document.getElementById("scrollToTop").style.display = "block";
+    var contactSection = document.getElementById("contact");
+    var scrollToTopBtn = document.getElementById("scrollToTop");
+
+    // Verificar se a seção de contato está em foco
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+    }, { threshold: 0.5 });
+
+    // Observar a seção de contato
+    observer.observe(contactSection);
 }
 
 

@@ -302,7 +302,7 @@ header, footer {
     font-size: 24px;
     z-index: 1000;
     transition: opacity 0.3s ease-in-out;
-    opacity: 0.3; 
+    opacity: 0.5; 
 }
 
 
