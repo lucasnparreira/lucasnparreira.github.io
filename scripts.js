@@ -79,24 +79,13 @@ function closeNav() {
     }, 200);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var scrollToTopBtn = document.getElementById("scrollToTop");
 
-    var imageSection = document.getElementById("seta-para-cima-icon");
+function hiddeBtnArrowTop() {
+    document.getElementById("scrollToTop").style.display = "none";
+}
 
-    var observer = new IntersectionObserver(function(entries){
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
-            }
-        }, { threshold: 0.5});
+function showBtnArrowTop() {
+    document.getElementById("scrollToTop").style.display = "block";
+}
 
-        observer.observe(imageSection);
 
-        scrollToTopBtn.addEventListener("click", function() {
-            window.scrollTo({ top: 0, behavior: "smooth"});
-        });
-    });
-});

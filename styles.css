@@ -287,7 +287,7 @@ header, footer {
 }
 
 .scroll-to-top {
-    /* display: none; */
+    display: none; 
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -302,8 +302,9 @@ header, footer {
     font-size: 24px;
     z-index: 1000;
     transition: opacity 0.3s ease-in-out;
-    opacity: 50%;
+    opacity: 0.3; 
 }
+
 
 
 @media (min-width: 768px) {
