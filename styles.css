@@ -269,14 +269,40 @@ header, footer {
 }
 
 #instagram-icon {
-    width: 24px;  /* Ajuste a largura conforme necessário */
-    height: 24px;  /* Ajuste a altura conforme necessário */
+    width: 24px;  
+    height: 24px;  
     vertical-align: middle;
     margin-right: 10px;
 }
 
 #instagram-link:hover {
     background-color: #C13584;
+}
+
+#seta-para-cima-icon {
+    width: 24px;  
+    height: 24px;  
+    vertical-align: center;
+    /* margin-right: 5px; */
+}
+
+.scroll-to-top {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 50%;
 }
 
 
