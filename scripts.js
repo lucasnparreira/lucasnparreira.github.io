@@ -4,6 +4,23 @@ const images = document.querySelectorAll('.carousel-inner img');
 const modal = document.getElementById('image-modal');
 const modalImage = document.getElementById('modal-image');
 
+var contactSection = document.getElementById("contact");
+var scrollToTopBtn = document.getElementById("scrollToTop");
+
+// Verificar se a seção de contato está em foco para ativar o arrow-up button desde o inicio
+var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    });
+}, { threshold: 0.5 });
+
+// Observar a seção de contato para ativar o arrow-up button desde o inicio
+observer.observe(contactSection);
+
 document.querySelectorAll('.carousel-inner img').forEach((img, index) => {
     img.addEventListener('click', () => {
         moveSlide(index - currentSlide);
