@@ -27,90 +27,93 @@
             <h3>STONEMATES</h3>
         </div>
     </header>
-    
-    <section id="home">
-        <h1>NEWZEALAND'S STONEWORK SPECIALISTS</h1>
-    </section>
-    
-    <section id="services">
-        <h2>Services</h2>
-        <div class="service">
-            <h3>Residential</h3>
-            <p>Specialist in Hight-end homes throughout the Hawe’s Bay, including architecturally designed in properties.</p>
-        </div>
-        <div class="service">
-            <h3>Commercial</h3>
-            <p>Experienced in small and large-scale commercial projects...</p>
-        </div>
-        <div class="service">
-            <h3>Landscaping</h3>
-            <p>Feature and retaining walls, paving...</p>
-        </div>
-    </section>
-    
-    <section id="work">
-        <h2>Our Work</h2>
+    <div onclick="closeNav()">
 
-        <div class="carousel-container">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="carousel">
-                
-                <div class="carousel-inner" id="carousel-inner">
-                    <img src="img/image1.jpg" alt="Image 1" onclick="openModal(0)">
-                    <img src="img/image2.jpg" alt="Image 2" onclick="openModal(1)">
-                    <img src="img/image3.jpg" alt="Image 3" onclick="openModal(2)">
-                    <img src="img/image4.jpg" alt="Image 4" onclick="openModal(3)">
-                    <img src="img/image5.jpg" alt="Image 5" onclick="openModal(4)">
-                    <img src="img/image6.jpg" alt="Image 6" onclick="openModal(5)">
-                    <img src="img/image7.jpg" alt="Image 7" onclick="openModal(6)">
-                    <img src="img/image8.jpg" alt="Image 8" onclick="openModal(7)">
-                    <img src="img/image9.jpg" alt="Image 9" onclick="openModal(8)">
-                    <img src="img/image10.jpg" alt="Image 10" onclick="openModal(9)">
-                    <img src="img/image11.jpg" alt="Image 11" onclick="openModal(10)">
-                    <img src="img/image12.jpg" alt="Image 12" onclick="openModal(11)">
-                    <img src="img/image13.jpg" alt="Image 13" onclick="openModal(12)">
-                    <img src="img/image14.jpg" alt="Image 14" onclick="openModal(13)">
-                    <img src="img/image15.jpg" alt="Image 15" onclick="openModal(14)">
+        <section id="home">
+            <h1>NEWZEALAND'S STONEWORK SPECIALISTS</h1>
+        </section>
+        
+        <section id="services">
+            <h2>Services</h2>
+            <div class="service">
+                <h3>Residential</h3>
+                <p>Specialist in Hight-end homes throughout the Hawe’s Bay, including architecturally designed in properties.</p>
+            </div>
+            <div class="service">
+                <h3>Commercial</h3>
+                <p>Experienced in small and large-scale commercial projects...</p>
+            </div>
+            <div class="service">
+                <h3>Landscaping</h3>
+                <p>Feature and retaining walls, paving...</p>
+            </div>
+        </section>
+        
+        <section id="work">
+            <h2>Our Work</h2>
+
+            <div class="carousel-container">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel">
+                    
+                    <div class="carousel-inner" id="carousel-inner">
+                        <img src="img/image1.jpg" alt="Image 1" onclick="openModal(0)">
+                        <img src="img/image2.jpg" alt="Image 2" onclick="openModal(1)">
+                        <img src="img/image3.jpg" alt="Image 3" onclick="openModal(2)">
+                        <img src="img/image4.jpg" alt="Image 4" onclick="openModal(3)">
+                        <img src="img/image5.jpg" alt="Image 5" onclick="openModal(4)">
+                        <img src="img/image6.jpg" alt="Image 6" onclick="openModal(5)">
+                        <img src="img/image7.jpg" alt="Image 7" onclick="openModal(6)">
+                        <img src="img/image8.jpg" alt="Image 8" onclick="openModal(7)">
+                        <img src="img/image9.jpg" alt="Image 9" onclick="openModal(8)">
+                        <img src="img/image10.jpg" alt="Image 10" onclick="openModal(9)">
+                        <img src="img/image11.jpg" alt="Image 11" onclick="openModal(10)">
+                        <img src="img/image12.jpg" alt="Image 12" onclick="openModal(11)">
+                        <img src="img/image13.jpg" alt="Image 13" onclick="openModal(12)">
+                        <img src="img/image14.jpg" alt="Image 14" onclick="openModal(13)">
+                        <img src="img/image15.jpg" alt="Image 15" onclick="openModal(14)">
+                    </div>
+                    
                 </div>
-                
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-        
-        <div id="image-modal" class="modal" onclick="closeModalOnClick(event)">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <button class="prev" onclick="moveSlideModal(-1)">&#10094;</button>
-            <img class="modal-content" id="modal-image">
-            <button class="next" onclick="moveSlideModal(1)">&#10095;</button>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to Stonemates Limited, a leading provider of high-quality stonework in Hawkes Bay. 
-            Founded by owner Alex, our team specializes in crafting beautiful stonework for both residential and commercial clients. 
-            <br>At Stonemates Limited, our mission is to deliver top-notch craftsmanship and exceptional service to all of our clients. 
-            At Stonemates Limited, our commitment to excellence ensures that every project is completed with skill, care, and attention to detail. 
-            <br>Elevate your environment with Stonemates Limited - where craftsmanship meets creativity.</p>
-           
-            <div id="scrollToTop" class="scroll-to-top">
-                <a href="#menu-img"><img src="img/seta-para-cima.png" alt="seta-para-cima" id="seta-para-cima-icon" onclick="hiddeBtnArrowTop()"></a>
+            
+            <div id="image-modal" class="modal" onclick="closeModalOnClick(event)">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="moveSlideModal(-1)">&#10094;</button>
+                <img class="modal-content" id="modal-image">
+                <button class="next" onclick="moveSlideModal(1)">&#10095;</button>
             </div>
-           
-    </section>
+        </section>
 
-    <section id="contact" onclick="showBtnArrowTop()">
-        <h2 id="contact-title">Contact</h2>
-        <p><a href="mailto:stonemateshb@gmail.com"><img src="img/email.png" alt="E-mail icon">stonemateshb@gmail.com</a></p>
-        <p><a href="tel:0275551185"><img src="img/phone.png" alt="Phone icon">0275551185</a></p>
-        <a href="https://www.instagram.com/stonemateshb?igsh=MWZjcXQwZWdkcnU1ZQ==" target="_blank" id="instagram-link"><img src="img/Instagram_icon.png" alt="Instagram icon" id="instagram-icon">Follow us on Instagram</a>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Stonemates Limited, a leading provider of high-quality stonework in Hawkes Bay. 
+                Founded by owner Alex, our team specializes in crafting beautiful stonework for both residential and commercial clients. 
+                <br>At Stonemates Limited, our mission is to deliver top-notch craftsmanship and exceptional service to all of our clients. 
+                At Stonemates Limited, our commitment to excellence ensures that every project is completed with skill, care, and attention to detail. 
+                <br>Elevate your environment with Stonemates Limited - where craftsmanship meets creativity.</p>
+            
+                <div id="scrollToTop" class="scroll-to-top">
+                    <a href="#menu-img"><img src="img/seta-para-cima.png" alt="seta-para-cima" id="seta-para-cima-icon" onclick="hiddeBtnArrowTop()"></a>
+                </div>
+            
+        </section>
+
+        <section id="contact" onclick="showBtnArrowTop()">
+            <h2 id="contact-title">Contact</h2>
+            <p><a href="mailto:stonemateshb@gmail.com"><img src="img/email.png" alt="E-mail icon">stonemateshb@gmail.com</a></p>
+            <p><a href="tel:0275551185"><img src="img/phone.png" alt="Phone icon">0275551185</a></p>
+            <a href="https://www.instagram.com/stonemateshb?igsh=MWZjcXQwZWdkcnU1ZQ==" target="_blank" id="instagram-link"><img src="img/Instagram_icon.png" alt="Instagram icon" id="instagram-icon">Follow us on Instagram</a>
+            
+        </section>
+    
+        <footer>
+            <!-- <img src="img/logo.png" alt="Logo image"> -->
+            <p>© 2024 Stonemates Ltd</p>
+        </footer>
         
-    </section>
-  
-    <footer>
-        <!-- <img src="img/logo.png" alt="Logo image"> -->
-        <p>© 2024 Stonemates Ltd</p>
-    </footer>
+    </div>
 
     <script src="scripts.js"></script>
 
