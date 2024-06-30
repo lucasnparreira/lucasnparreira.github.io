@@ -377,28 +377,37 @@ header, footer {
     }
     
     /* Estilos para o formulario de contato */
-    form {
-        max-width: 400px;
-        margin: 0 auto;
-        padding-top: 60px;
-    }
-    
-    input,
-    textarea {
-        width: 100%;
+    form#contact-form input,
+    form#contact-form textarea,
+    form#contact-form button {
+        display: block;
+        width: 30%;
+        margin-bottom: 5px;
         padding: 10px;
-        margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
     }
-    
-    button {
+
+    form#contact-form textarea {
+        padding: 60px;
+        width: 50%;
+    }
+
+    form#contact-form textarea {
+        height: 150px; /* Altura da textarea */
+        resize: vertical; /* Permite redimensionar verticalmente */
+        overflow: auto; /* Permite scroll interno */
+        padding: 10px; /* Garante espaço entre o texto e as bordas */
+        box-sizing: border-box; /* Inclui padding e border no width e height */
+    }
+
+    form#contact-form button {
         background-color: #007bff;
-        color: #fff;
+        width: 15%;
+        color: white;
         border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
         cursor: pointer;
+        margin-bottom: 0; /* Remove margin for the last element */
     }
     
     #h3-contact {
@@ -618,20 +627,37 @@ header, footer {
         right: 10px;
     }
 
-    form {
-        max-width: 100%;
+    form#contact-form input,
+    form#contact-form textarea,
+    form#contact-form button {
+        /* display: block; */
+        width:95%;
+        margin-bottom: 5px;
         padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
-    input,
-    textarea {
-        padding: 8px;
-        font-size: 12px;
+    form#contact-form textarea {
+        padding: 50px;
+        width: 100%;
     }
 
-    button {
-        padding: 5px;
-        font-size: 12px;
+    form#contact-form textarea {
+        height: 150px; /* Altura da textarea */
+        resize: vertical; /* Permite redimensionar verticalmente */
+        overflow: auto; /* Permite scroll interno */
+        padding: 10px; /* Garante espaço entre o texto e as bordas */
+        box-sizing: border-box; /* Inclui padding e border no width e height */
+    }
+
+    form#contact-form button {
+        background-color: #007bff;
+        width: 40%;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 0; /* Remove margin for the last element */
     }
 
     #contact {
@@ -676,5 +702,38 @@ header, footer {
     .next {
         right: 0%;
         font-size: larger;
+    }
+
+    form#contact-form input,
+    form#contact-form textarea,
+    form#contact-form button {
+        /* display: block; */
+        width: 93%;
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form#contact-form textarea {
+        padding: 50px;
+        width: 100%;
+    }
+
+    form#contact-form textarea {
+        height: 150px; /* Altura da textarea */
+        resize: vertical; /* Permite redimensionar verticalmente */
+        overflow: auto; /* Permite scroll interno */
+        padding: 10px; /* Garante espaço entre o texto e as bordas */
+        box-sizing: border-box; /* Inclui padding e border no width e height */
+    }
+
+    form#contact-form button {
+        background-color: #007bff;
+        width: 40%;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 0; /* Remove margin for the last element */
     }
 }

@@ -91,9 +91,11 @@
         <section id="about">
             <h2>About Us</h2>
             <p>Welcome to Stonemates Limited, a leading provider of high-quality stonework in Hawkes Bay. 
-                Founded by owner Alex, our team specializes in crafting beautiful stonework for both residential and commercial clients. 
+                <!-- Founded by owner Alex, our team specializes in crafting beautiful stonework for both residential and commercial clients.  -->
+                <br>At Stonemates, our team is united by a passion for home design and the exquisite qualities of natural stone. 
+                <br>Leading us is Alex, a seasoned expert in the field with a profound appreciation for the stunning beauty of natural stone.
                 <br>At Stonemates Limited, our mission is to deliver top-notch craftsmanship and exceptional service to all of our clients. 
-                At Stonemates Limited, our commitment to excellence ensures that every project is completed with skill, care, and attention to detail. 
+                <br>Our commitment to excellence ensures that every project is completed with skill, care, and attention to detail. 
                 <br>Elevate your environment with Stonemates Limited - where craftsmanship meets creativity.</p>
             
                 <div id="scrollToTop" class="scroll-to-top">
@@ -102,9 +104,16 @@
             
         </section>
 
-        <section id="contact" onclick="showBtnArrowTop()">
-            <h2 id="contact-title">Contact</h2>
-            <p><a href="mailto:stonemateshb@gmail.com"><img src="img/email.png" alt="E-mail icon">stonemateshb@gmail.com</a></p>
+        <section id="contact">
+            <h2 id="contact-title">REQUEST A QUOTE</h2>
+            <!-- <p><a href="mailto:stonemateshb@gmail.com"><img src="img/email.png" alt="E-mail icon">stonemateshb@gmail.com</a></p> -->
+            <form action="mailto:stonemateshb@gmail.com" method="post" enctype="text/plain" id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="phone" placeholder="Your Phone" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
             <p><a href="tel:0275551185"><img src="img/phone.png" alt="Phone icon">0275551185</a></p>
             <a href="https://www.instagram.com/stonemateshb?igsh=MWZjcXQwZWdkcnU1ZQ==" target="_blank" id="instagram-link"><img src="img/Instagram_icon.png" alt="Instagram icon" id="instagram-icon">Follow us on Instagram</a>
             

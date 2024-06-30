@@ -121,3 +121,18 @@ function showBtnArrowTop() {
 }
 
 
+//codigo para enviar email do formulario
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    // Monta a URL mailto
+    const mailtoUrl = `mailto:stonemates@gmail.com?body=${encodeURIComponent(message)}`;
+
+    // Abre a URL mailto
+    window.location.href = mailtoUrl;
+
+    // Limpa os campos do formulário
+    this.reset();
+});
