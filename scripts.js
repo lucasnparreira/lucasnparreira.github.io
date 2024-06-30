@@ -120,8 +120,11 @@ function showBtnArrowTop() {
     observer.observe(contactSection);
 }
 
+(function() {
+    emailjs.init("JFhbSZfnCuVsWirBS"); // Substitua com seu User ID do EmailJS
+})();
 
-//codigo para enviar email do formulario
+
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 
@@ -136,3 +139,27 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Limpa os campos do formulário
     this.reset();
 });
+
+
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     // Coleta os dados do formulário
+//     const formData = new FormData(event.target);
+//     const data = {
+//         name: formData.get('name'),
+//         email: formData.get('email'),
+//         phone: formData.get('phone'),
+//         message: formData.get('message')
+//     };
+
+//     emailjs.sendForm('service_zzlb4ti', 'template_ajdvyct', data)
+//         .then(function() {
+//             console.log('SUCCESS!', response.status, response.text);
+//             alert('Message sent successfully!');
+//             // Limpar o formulário após o envio
+//             document.getElementById('contact-form').reset();
+//         }, function(error) {
+//             console.log('FAILED...', error);
+//             alert('Failed to send message.');
+//         });
+// });
