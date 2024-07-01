@@ -120,46 +120,55 @@ function showBtnArrowTop() {
     observer.observe(contactSection);
 }
 
-(function() {
-    emailjs.init("JFhbSZfnCuVsWirBS"); // Substitua com seu User ID do EmailJS
-})();
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('send-button').addEventListener('click', function(event) {
+        // Função para armazenar os valores do formulário
+        function storeFormValues() {
+            var name = document.getElementById('form_name').value;
+            var email = document.getElementById('form_email').value;
+            var phone = document.getElementById('form_phone').value;
+            var message = document.getElementById('form_message').value;
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+            // Exibir os valores no console
+            console.log("Name:", name);
+            console.log("Email:", email);
+            console.log("Phone:", phone);
+            console.log("Message:", message);
 
-    const message = document.querySelector('textarea[name="message"]').value;
+            return {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message
+            };
+        }
 
-    // Monta a URL mailto
-    const mailtoUrl = `mailto:stonemates@gmail.com?body=${encodeURIComponent(message)}`;
+        // Armazenar os valores do formulário
+        var formData = storeFormValues();
 
-    // Abre a URL mailto
-    window.location.href = mailtoUrl;
+        // Construir o corpo do e-mail
+        var body = 'Name: ' + encodeURIComponent(formData.name) + '%0D%0A' +
+                'Email: ' + encodeURIComponent(formData.email) + '%0D%0A' +
+                'Phone: ' + encodeURIComponent(formData.phone) + '%0D%0A' +
+                'Message: ' + encodeURIComponent(formData.message);
 
-    // Limpa os campos do formulário
-    this.reset();
+        // Construir o link mailto
+        var mailtoLink = 'mailto:stonemateshb@gmail.com'
+                        + '?subject=' + encodeURIComponent('Contact - Requesting a quote')
+                        + '&body=' + body;
+
+        console.log("Mailto Link:", mailtoLink);  // Debugging line to check the mailto link
+
+        // Redirecionar para o link mailto
+        window.location.href = mailtoLink;
+
+        // Limpar o formulário após 5 segundos
+        setTimeout(function() {
+            document.getElementById('form_name').value = '';
+            document.getElementById('form_email').value = '';
+            document.getElementById('form_phone').value = '';
+            document.getElementById('form_message').value = '';
+        }, 1000); 
+    });
 });
-
-
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     // Coleta os dados do formulário
-//     const formData = new FormData(event.target);
-//     const data = {
-//         name: formData.get('name'),
-//         email: formData.get('email'),
-//         phone: formData.get('phone'),
-//         message: formData.get('message')
-//     };
-
-//     emailjs.sendForm('service_zzlb4ti', 'template_ajdvyct', data)
-//         .then(function() {
-//             console.log('SUCCESS!', response.status, response.text);
-//             alert('Message sent successfully!');
-//             // Limpar o formulário após o envio
-//             document.getElementById('contact-form').reset();
-//         }, function(error) {
-//             console.log('FAILED...', error);
-//             alert('Failed to send message.');
-//         });
-// });

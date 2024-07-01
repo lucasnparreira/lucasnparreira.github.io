@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stonemates NZ</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
 </head>
 <body>
     <header class="navbar">
@@ -110,11 +108,11 @@
             <h2 id="contact-title">REQUEST A QUOTE</h2>
             <!-- <p><a href="mailto:stonemateshb@gmail.com"><img src="img/email.png" alt="E-mail icon">stonemateshb@gmail.com</a></p> -->
             <form id="contact-form">
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                <input type="text" name="phone" id="phone" placeholder="Your Phone" required>
-                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" name="name" id="form_name" placeholder="Your Name" required>
+                <input type="email" name="email" id="form_email" placeholder="Your Email" required>
+                <input type="text" name="phone" id="form_phone" placeholder="Your Phone" required>
+                <textarea name="message" id="form_message" placeholder="Your Message" required></textarea>
+                <button type="button" id="send-button">Send Message</button>
             </form>
             <p><a href="tel:0275551185"><img src="img/phone.png" alt="Phone icon">0275551185</a></p>
             <a href="https://www.instagram.com/stonemateshb?igsh=MWZjcXQwZWdkcnU1ZQ==" target="_blank" id="instagram-link"><img src="img/Instagram_icon.png" alt="Instagram icon" id="instagram-icon">Follow us on Instagram</a>
@@ -125,9 +123,8 @@
             <!-- <img src="img/logo.png" alt="Logo image"> -->
             <p>© 2024 Stonemates Ltd</p>
         </footer>
-
+        
     <script src="scripts.js"></script>
-   
 
 </body>
 </html>
