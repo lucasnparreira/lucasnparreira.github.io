@@ -131,10 +131,10 @@ document.addEventListener('DOMContentLoaded', function() {
             var message = document.getElementById('form_message').value;
 
             // Exibir os valores no console
-            console.log("Name:", name);
-            console.log("Email:", email);
-            console.log("Phone:", phone);
-            console.log("Message:", message);
+            // console.log("Name:", name);
+            // console.log("Email:", email);
+            // console.log("Phone:", phone);
+            // console.log("Message:", message);
 
             return {
                 name: name,
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         + '?subject=' + encodeURIComponent('Contact - Requesting a quote')
                         + '&body=' + body;
 
-        console.log("Mailto Link:", mailtoLink);  // Debugging line to check the mailto link
+        // console.log("Mailto Link:", mailtoLink);  // Debugging line to check the mailto link
 
         // Redirecionar para o link mailto
         window.location.href = mailtoLink;

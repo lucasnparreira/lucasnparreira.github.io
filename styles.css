@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background: url('img/image1.jpg') no-repeat center center fixed;
+    background: url('img/capa.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     height: 100%;
@@ -472,6 +472,13 @@ header, footer {
         right: 0px;
         font-size: larger;
     }
+
+    .logo img{
+            width: 70px;
+            height: auto;
+            margin-right: 10px;
+            padding-left: 28px;
+    }
     
     
 }
@@ -538,7 +545,7 @@ header, footer {
     }
 
     #title-menu-side{
-        padding-left: 20%;
+        padding-left: 10%;
     }
 
     .carousel-container {
@@ -664,6 +671,13 @@ header, footer {
         width: 85%;
     }
 
+    .logo img{
+        width: 70px;
+        height: auto;
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+
 }
 
 @media(max-width:400px){
@@ -735,5 +749,12 @@ header, footer {
         border: none;
         cursor: pointer;
         margin-bottom: 0; /* Remove margin for the last element */
+    }
+
+    .logo img{
+        width: 70px;
+        height: auto;
+        margin-right: 10px;
+        padding-left: 10px;
     }
 }
