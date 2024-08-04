@@ -12,14 +12,10 @@ body {
 
 section {
     flex: 1;
-    width: 90%;
     max-width: 1000px;
     margin: auto;
-    /* padding: 20px; */
     text-align: left;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background: rgba(252, 252, 252, 0.9); 
 }
 
 section #about p {
@@ -82,7 +78,8 @@ header, footer {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
+    width: 350px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -286,31 +283,11 @@ header, footer {
     /* margin-right: 5px; */
 }
 
-.scroll-to-top {
-    display: none; 
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1000;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0.5; 
-}
-
-
 
 @media (min-width: 768px) {
     section {
         padding: 20px;
-        max-width: 100%;
+        /* max-width: 100%; */
         margin: auto;
     }
     
@@ -343,7 +320,8 @@ header, footer {
         padding-bottom: 2%;
         align-items: left;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
+        padding: 25px;
     }
 
 
@@ -352,10 +330,13 @@ header, footer {
         color: #fff;
         text-align: center;
         padding: 10px 0;
-        /* position: fixed; */
-        width: 100%;
         bottom: 0;
-        /* display: flex; */
+        min-height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-sizing: border-box; */
     }
 
     footer img {
@@ -397,7 +378,7 @@ header, footer {
         height: 150px; /* Altura da textarea */
         resize: vertical; /* Permite redimensionar verticalmente */
         overflow: auto; /* Permite scroll interno */
-        padding: 10px; /* Garante espaço entre o texto e as bordas */
+        padding: 15px; /* Garante espaço entre o texto e as bordas */
         box-sizing: border-box; /* Inclui padding e border no width e height */
     }
 
@@ -419,14 +400,14 @@ header, footer {
         justify-content: center;
         align-items: center;
         height: 300px;
-        width: 90%; /* Ajusta a largura do container do carrossel */
+        width: 85%; /* Ajusta a largura do container do carrossel */
         margin: 0 auto; /* Centraliza horizontalmente */
-        padding: 0 5%;
+        padding: 0 1%;
         position: relative;
     }
     
     .carousel {
-        width: 100%; /* Define a largura do carrossel como 100% do container */
+        width: 90%; /* Define a largura do carrossel como 100% do container */
         height: 200px; /* Altura do carrossel */
         overflow: hidden;
         border: 2px solid #333;
@@ -479,7 +460,38 @@ header, footer {
             margin-right: 10px;
             padding-left: 28px;
     }
-    
+
+    #home {
+        padding-bottom: 20%;
+        margin-bottom: 20%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .scroll-to-top {
+        display: none; 
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 1000;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0.5; 
+    }
+
+    .dropbtn, .dropdown {
+        padding-left: 500px;
+    }
     
 }
 
@@ -514,7 +526,7 @@ header, footer {
         text-align: center;
         padding: 10px 0;
         /* position: fixed; */
-        width: 100%;
+        width: 105%;
         height: auto;
         bottom: 0;
         /* display: flex; */
@@ -668,7 +680,7 @@ header, footer {
     }
 
     #contact {
-        width: 85%;
+        width: 90%;
     }
 
     .logo img{
@@ -676,6 +688,37 @@ header, footer {
         height: auto;
         margin-right: 10px;
         padding-left: 10px;
+    }
+
+    #home {
+        padding-bottom: 250px;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    .scroll-to-top {
+        display: none; 
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 1000;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0.5; 
+    }
+
+    .dropbtn, .dropdown  {
+        padding-left: 50px;
     }
 
 }

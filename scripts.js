@@ -85,7 +85,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "190px";
+    document.getElementById("mySidenav").style.width = "375px";
 }
 
 function closeNav() {
