@@ -12,7 +12,7 @@ header:
       url: "https://linkedin.com/in/lucasnparreira"
     - label: "<i class='fab fa-twitter'></i> X (Twitter)"
       url: "https://x.com/parreira_lucas"
-excerpt: """
+excerpt: """"""
 # Software Engineer (Data) <br /> <small>I am a versatile developer with a passion for building robust software and extracting value from data. My expertise lies in creating efficient back-end architectures plus QA Automations, and applying machine learning to solve real-world problems.</small>"
 ---
 ### 💻 Software Engineering
