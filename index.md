@@ -14,7 +14,7 @@ author_profile: true
 #       url: "https://x.com/parreira_lucas"
 
 ---
-### 💻 Software Engineer
+<!-- ### 💻 Software Engineer -->
 In my software journey, I focus on **reliability and scalability**. I believe that code is a tool for communication—both with the machine and with other developers. 
 * **Core Philosophy:** Clean Code, SOLID principles, and automated testing.
 * **Specialties:** Microservices, API Design, and Cloud Infrastructure.
