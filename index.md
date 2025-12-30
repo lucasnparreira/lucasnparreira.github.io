@@ -12,7 +12,8 @@ header:
       url: "https://linkedin.com/in/lucasnparreira"
     - label: "<i class='fab fa-twitter'></i> X (Twitter)"
       url: "https://x.com/parreira_lucas"
-excerpt: "Software Engineer (Data) <br /> <small>I am a versatile developer with a passion for building robust software and extracting value from data. My expertise lies in creating efficient back-end architectures plus QA Automations, and applying machine learning to solve real-world problems.</small>"
+excerpt: ""Software Engineer (Data) <br /> <small>
+  I am a versatile developer with a passion for building robust software and extracting value from data. My expertise lies in creating efficient back-end architectures plus QA Automations, and applying machine learning to solve real-world problems.</small>""
 ---
 
 ### 💻 Software Engineering
@@ -26,11 +27,10 @@ My approach to data is rooted in **curiosity and rigor**. I don't just look for 
 * **Specialties:** Exploratory Data Analysis (EDA), Predictive Modeling, and Data Visualization.
 
 ### 🛠 Tech Stack
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | Python, Java, SQL, JavaScript |
-| **Data Science** | Scikit-Learn, Pandas, Pyspark, NumPy, Matplotlib |
-| **Engineering** | Docker, FastAPI, PostgreSQL, Git |
+Category - Technologies 
+* **Languages** - Python, Java, SQL, JavaScript 
+* **Data Science** - Scikit-Learn, Pandas, Pyspark, NumPy, Matplotlib 
+* **Engineering** | Docker, FastAPI, PostgreSQL, Git 
 
 ---
 
@@ -72,7 +72,7 @@ My approach to data is rooted in **curiosity and rigor**. I don't just look for 
 
 ---
 
-## 📫 Get In Touch
+<!-- ## 📫 Get In Touch
 * **LinkedIn:** [lucasnparreira](https://linkedin.com/in/lucasnparreira)
 * **GitHub:** [@lucasnparreira](https://github.com/lucasnparreira)
-* **Location:** Glasgow, UK 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+* **Location:** Glasgow, UK 🏴󠁧󠁢󠁳󠁣󠁴󠁿 -->
