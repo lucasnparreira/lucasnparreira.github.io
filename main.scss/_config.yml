@@ -1,3 +1,21 @@
+# Site Settings
+title: "Lucas Parreira"
+locale: "en-US"
+url: "https://lucasnparreira.github.io"
+baseurl: "" 
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Author Settings
 author:
   name: "Lucas Parreira"
   avatar: "/assets/images/avatar.png"
@@ -13,6 +31,32 @@ author:
     - label: "X (Twitter)"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/parreira_lucas"
+
+# Collections
+collections:
+  software:
+    output: true
+    permalink: /software/:path/
+  data_science:
+    output: true
+    permalink: /data-science/:path/
+
+# Defaults 
+defaults:
+  - scope:
+      path: ""
+      type: "software"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "data_science"
+    values:
+      layout: "single"
+      author_profile: true
+
+# Feature Rows for Homepage
 feature_row_software:
   - image_path: /assets/images/time-system-teaser.jpg
     alt: "Time Tracking System"
@@ -21,8 +65,3 @@ feature_row_software:
     url: "/software/time-tracking-system/"
     btn_class: "btn--primary"
     btn_label: "Explore Architecture"
-
-remote_theme: "mmistakes/minimal-mistakes"
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
