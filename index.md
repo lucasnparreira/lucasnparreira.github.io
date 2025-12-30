@@ -1,17 +1,17 @@
 ---
 layout: home
-author_profile: true
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/header-bg.jpg 
-  actions:
-    - label: "<i class='fab fa-github'></i> GitHub"
-      url: "https://github.com/lucasnparreira"
-    - label: "<i class='fab fa-linkedin'></i> LinkedIn"
-      url: "https://linkedin.com/in/lucasnparreira"
-    - label: "<i class='fab fa-twitter'></i> X (Twitter)"
-      url: "https://x.com/parreira_lucas"
+author_profile: false
+# header:
+#   overlay_color: "#000"
+#   overlay_filter: "0.5"
+#   overlay_image: /assets/images/header-bg.jpg 
+#   actions:
+#     - label: "<i class='fab fa-github'></i> GitHub"
+#       url: "https://github.com/lucasnparreira"
+#     - label: "<i class='fab fa-linkedin'></i> LinkedIn"
+#       url: "https://linkedin.com/in/lucasnparreira"
+#     - label: "<i class='fab fa-twitter'></i> X (Twitter)"
+#       url: "https://x.com/parreira_lucas"
 
 ---
 ### 💻 Software Engineer
