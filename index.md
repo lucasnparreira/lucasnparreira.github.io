@@ -14,7 +14,7 @@ header:
       url: "https://x.com/parreira_lucas"
 
 ---
-### 💻 Software Engineering
+### 💻 Software Engineer
 In my software journey, I focus on **reliability and scalability**. I believe that code is a tool for communication—both with the machine and with other developers. 
 * **Core Philosophy:** Clean Code, SOLID principles, and automated testing.
 * **Specialties:** Microservices, API Design, and Cloud Infrastructure.
@@ -28,7 +28,7 @@ My approach to data is rooted in **curiosity and rigor**. I don't just look for 
 Category - Technologies 
 * **Languages** - Python, Java, SQL, JavaScript 
 * **Data Science** - Scikit-Learn, Pandas, Pyspark, NumPy, Matplotlib 
-* **Engineering** | Docker, FastAPI, PostgreSQL, Git 
+* **Engineering** - Docker, FastAPI, PostgreSQL, Git 
 
 ---
 
