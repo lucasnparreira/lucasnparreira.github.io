@@ -4,7 +4,7 @@ author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/header-bg.jpg # Optional: Add a cool tech background later
+  overlay_image: /assets/images/header-bg.jpg 
   actions:
     - label: "<i class='fab fa-github'></i> GitHub"
       url: "https://github.com/lucasnparreira"
@@ -12,11 +12,8 @@ header:
       url: "https://linkedin.com/in/lucasnparreira"
     - label: "<i class='fab fa-twitter'></i> X (Twitter)"
       url: "https://x.com/parreira_lucas"
-excerpt: "Software Engineer (Data) <br /> <small>Bridging the gap between scalable systems and intelligent insights.</small>"
+excerpt: "Software Engineer (Data) <br /> <small>I am a versatile developer with a passion for building robust software and extracting value from data. My expertise lies in creating efficient back-end architectures plus QA Automations, and applying machine learning to solve real-world problems.</small>"
 ---
-
-## 👨‍💻 About Me
-I am a versatile developer with a passion for building robust software and extracting value from data. My expertise lies in creating efficient back-end architectures and applying machine learning to solve real-world problems.
 
 ### 💻 Software Engineering
 In my software journey, I focus on **reliability and scalability**. I believe that code is a tool for communication—both with the machine and with other developers. 
@@ -35,22 +32,47 @@ My approach to data is rooted in **curiosity and rigor**. I don't just look for 
 | **Data Science** | Scikit-Learn, Pandas, Pyspark, NumPy, Matplotlib |
 | **Engineering** | Docker, FastAPI, PostgreSQL, Git |
 
-
-----
+---
 
 ## 🚀 Featured Projects
-    **title: "Electronic Time Tracking"**
-    **url: "https://github.com/lucasnparreira/time_sistema_ponto"**
 
-    **title: "Payment Processing API"**
-    **url: "https://github.com/lucasnparreira/api_para_pagamentos"**
+<div class="grid__wrapper">
+  
+  <article class="archive__item">
+    <h3 class="archive__item-title">🕒 Electronic Time Tracking</h3>
+    <p class="archive__item-excerpt">A robust system for managing employee work hours. Implements complex logic for shift calculations and data integrity.</p>
+    <a href="https://github.com/lucasnparreira/time_sistema_ponto" class="btn btn--primary">View on GitHub</a>
+  </article>
 
-    **title: "Antivirus Application"**
-    **url: "https://github.com/lucasnparreira/app_antivirus"**
+  <article class="archive__item">
+    <h3 class="archive__item-title">💳 Payment Processing API</h3>
+    <p class="archive__item-excerpt">Secure backend service for handling financial transactions. Focuses on ACID compliance and secure data flow.</p>
+    <a href="https://github.com/lucasnparreira/api_para_pagamentos" class="btn btn--primary">View on GitHub</a>
+  </article>
 
-    **title: "Personal Tech Blog"**
-    **url: "https://github.com/lucasnparreira/personal_blog"**
+  <article class="archive__item">
+    <h3 class="archive__item-title">🛡️ Antivirus Application</h3>
+    <p class="archive__item-excerpt">System security project focused on threat detection, file system monitoring, and system-level protection.</p>
+    <a href="https://github.com/lucasnparreira/app_antivirus" class="btn btn--primary">View on GitHub</a>
+  </article>
 
-    **title: "Office Password Remover"**
-    **url: "https://github.com/lucasnparreira/office_password_remover"**
-    
+  <article class="archive__item">
+    <h3 class="archive__item-title">📝 Personal Tech Blog</h3>
+    <p class="archive__item-excerpt">A custom-built platform for technical documentation and sharing engineering insights and tutorials.</p>
+    <a href="https://github.com/lucasnparreira/personal_blog" class="btn btn--primary">View on GitHub</a>
+  </article>
+
+  <article class="archive__item">
+    <h3 class="archive__item-title">🔑 Office Password Remover</h3>
+    <p class="archive__item-excerpt">Specialized utility tool for decrypting and recovering access to protected MS Office documents.</p>
+    <a href="https://github.com/lucasnparreira/office_password_remover" class="btn btn--primary">View on GitHub</a>
+  </article>
+
+</div>
+
+---
+
+## 📫 Get In Touch
+* **LinkedIn:** [lucasnparreira](https://linkedin.com/in/lucasnparreira)
+* **GitHub:** [@lucasnparreira](https://github.com/lucasnparreira)
+* **Location:** Glasgow, UK 🏴󠁧󠁢󠁳󠁣󠁴󠁿
