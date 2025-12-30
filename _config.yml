@@ -57,11 +57,37 @@ defaults:
       author_profile: true
 
 # Feature Rows for Homepage
-feature_row_software:
-  - image_path: /assets/images/time-system-teaser.jpg
-    alt: "Time Tracking System"
-    title: "Tracking System"
-    excerpt: "A production-focused approach to employee time management."
-    url: "/software/time-tracking-system/"
+feature_row_projects:
+  - image_path: /assets/images/time-system.jpg
+    alt: "Time Tracking"
+    title: "Electronic Time Tracking"
+    excerpt: "A robust system for managing employee work hours and clock-ins with high data integrity."
+    url: "https://github.com/lucasnparreira/time_sistema_ponto"
     btn_class: "btn--primary"
-    btn_label: "Explore Architecture"
+    btn_label: "View Code"
+  - image_path: /assets/images/payment-api.jpg
+    alt: "Payment API"
+    title: "Payment Processing API"
+    excerpt: "Backend API designed for secure transaction handling and financial data management."
+    url: "https://github.com/lucasnparreira/api_para_pagamentos"
+    btn_class: "btn--primary"
+    btn_label: "View Code"
+  - image_path: /assets/images/antivirus.jpg
+    alt: "Antivirus App"
+    title: "Antivirus Application"
+    excerpt: "A software engineering project focused on system security and threat detection."
+    url: "https://github.com/lucasnparreira/app_antivirus"
+    btn_class: "btn--primary"
+    btn_label: "View Code"
+
+feature_row_projects_2:
+  - title: "Personal Tech Blog"
+    excerpt: "A custom-built platform for sharing technical insights and engineering documentation."
+    url: "https://github.com/lucasnparreira/personal_blog"
+    btn_class: "btn--primary"
+    btn_label: "View Code"
+  - title: "Office Password Remover"
+    excerpt: "Utility tool for decrypting and recovering access to protected Office documents."
+    url: "https://github.com/lucasnparreira/office_password_remover"
+    btn_class: "btn--primary"
+    btn_label: "View Code"

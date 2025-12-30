@@ -28,3 +28,5 @@ I am a versatile developer with a passion for building robust software and extra
 ## 🚀 Featured Projects
 
 {% include feature_row id="feature_row_projects" %}
+
+{% include feature_row id="feature_row_projects_2" %}
