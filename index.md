@@ -18,15 +18,39 @@ excerpt: "Software Engineer (Data) <br /> <small>Bridging the gap between scalab
 ## 👨‍💻 About Me
 I am a versatile developer with a passion for building robust software and extracting value from data. My expertise lies in creating efficient back-end architectures and applying machine learning to solve real-world problems.
 
-### 🛠️ What I Do
-* **Software Engineering:** Building scalable APIs, microservices, and clean, maintainable codebases.
-* **Data:** Exploratory data analysis, predictive modeling, and data engineering pipelines.
-* **The Intersection:** Implementing MLOps to deploy and monitor models in production environments.
+### 💻 Software Engineering
+In my software journey, I focus on **reliability and scalability**. I believe that code is a tool for communication—both with the machine and with other developers. 
+* **Core Philosophy:** Clean Code, SOLID principles, and automated testing.
+* **Specialties:** Microservices, API Design, and Cloud Infrastructure.
+
+### 📊 Data
+My approach to data is rooted in **curiosity and rigor**. I don't just look for patterns; I look for actionable truths that can drive product decisions.
+* **Core Philosophy:** Data is useless without context. I focus on the "Story" behind the numbers.
+* **Specialties:** Exploratory Data Analysis (EDA), Predictive Modeling, and Data Visualization.
+
+### 🛠 Tech Stack
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | Python, Java, SQL, JavaScript |
+| **Data Science** | Scikit-Learn, Pandas, Pyspark, NumPy, Matplotlib |
+| **Engineering** | Docker, FastAPI, PostgreSQL, Git |
+
 
 ----
 
 ## 🚀 Featured Projects
+    **title: "Electronic Time Tracking"**
+    **url: "https://github.com/lucasnparreira/time_sistema_ponto"**
 
-{% include feature_row id="feature_row_projects" %}
+    **title: "Payment Processing API"**
+    **url: "https://github.com/lucasnparreira/api_para_pagamentos"**
 
-{% include feature_row id="feature_row_projects_2" %}
+    **title: "Antivirus Application"**
+    **url: "https://github.com/lucasnparreira/app_antivirus"**
+
+    **title: "Personal Tech Blog"**
+    **url: "https://github.com/lucasnparreira/personal_blog"**
+
+    **title: "Office Password Remover"**
+    **url: "https://github.com/lucasnparreira/office_password_remover"**
+    
